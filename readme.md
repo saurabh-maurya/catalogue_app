@@ -37,12 +37,11 @@ criteria the products list will get approved or rejected.
     - status (boolean) - store if product is approved or rejected based on some criteria
 
 ### Server - steps to start server side
-1. run command ** npm install** to install required modules
-2. edit **.env** file based on your databse setup.
-3. update **services.php -> google** data in *config* dir as per your google credentials.
-4. to migrate databases table use command **php artisan migrate**
-5. to start server use command **php artisan serve**
-6. Now you can access client side at port : 8000
+1. edit **.env** file based on your databse setup.
+2. update **services.php -> google** data in *config* dir as per your google credentials.
+3. to migrate databases table use command **php artisan migrate**
+4. to start server use command **php artisan serve**
+5. Now you can access client side at port : 8000
 
 
 ***Have a Good Day!***
