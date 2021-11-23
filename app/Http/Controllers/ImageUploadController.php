@@ -18,7 +18,9 @@ class ImageUploadController extends Controller
     }
     public function index(Request $request)
     {   
-        
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
         $product = new Product;
         $product->name = $request->input('name');
         $product->mrp = $request->input('mrp');
